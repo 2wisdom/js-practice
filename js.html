@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body div {
+            width: 100px;
+            height: 100px;
+            display:inline-flex;
+            margin-right: 5px;
+        }
+
+        .one {
+            background-color: yellow;
+        }
+
+        .two {
+            background-color: red;
+            border-radius: 50%;
+        }
+
+        .three {
+            background-color: yellow;
+        }
+
+        .four {
+            border: 1px solid gray;
+        }
+
+    </style>
+
+    <script>
+
+    </script>
+</head>
+<body>
+    <div class="one"
+    onclick="alert('이것은 노란색 사각형입니다')"></div>
+    <div class="two"
+        onclick="alert('이것은 빨간색 원입니다')"></div>
+    <div class="three"
+    onclick="alert('이것은 노란색 사각형입니다')"></div>
+    <div class="four"onclick="
+        document.querySelector('.four').style.borderRadius = '50%';
+        document.querySelector('.four').style.backgroundColor = 'red';
+        document.querySelector('.four').style.border = 'none';
+        let x=10; y=20;
+        z=x+y;
+        console.log(z);
+        "></div>
+</body>
+</html>
