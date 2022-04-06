@@ -17,11 +17,20 @@
 
     <!-- x = 11 / y = 11 ?? -->
     <script>
-        for (var i = 0; i < 100; i++){
-            document.write('*');
-                for(var j = 0; j < 10; j++){
-
+        /*
+        *
+        **
+        ***
+        ****
+        *****
+        */
+        for (var y = 1; y < 100; y++){
+            
+            let result = ''
+            for (let star = 1; star <= y; star++) {
+                result = result + '*'
             }
+            console.log(result)
         }
     </script>
 
