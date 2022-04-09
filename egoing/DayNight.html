@@ -6,48 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="./poketmon.js"></script>
-</head>
-<body>
-
-    <h1><a href="">Java Script</a></h1>
-    <a href="">재밌지만</a>
-    <a href="">어려워</a>
-    <p>이 페이지는 쩨가 자바스크립트를 연습하는 페이지다 !</p>
-
-    <!-- <input type="button" value='밤이 되어라!'onclick="
-        document.querySelector('body').style.backgroundColor = 'black';
-        document.querySelector('body').style.color = 'white';
-    ">
-    <input type="button" value='낮이 되어라!'onclick="
-        document.querySelector('body').style.backgroundColor = 'white';
-        document.querySelector('body').style.color = 'black';
-    "> -->
-
-    <!-- conditional statements / if(){} esle {} -->
-<!-- 
-    <h3>conditional statements</h3>
-    <input id="night_day" type="button" value="밤이조아" onclick="
-        if(document.querySelector('#night_day').value === '밤이조아'){
-            document.querySelector('body').style.backgroundColor = 'black';
-            document.querySelector('body').style.color = 'white';
-            document.querySelector('#night_day').value = '낮이조아';
-        } else {
-            document.querySelector('body').style.backgroundColor = 'white';
-            document.querySelector('body').style.color = 'black';
-            document.querySelector('#night_day').value = '밤이조아';
-        }
-    "> -->
-        
-    <!-- refactoring / this -->
-
-    <h3>refactoring</h3>
-    <input type="button" value="밤이조아" onclick="
-    console.log('this', this)
-        var target = document.querySelector('body');
-        if(this.value === '밤이조아'){
+    <script>
+        function nightDayHandler(self){
+            var target = document.querySelector('body');
+        if(self.value === '밤이조아'){
             target.style.backgroundColor = 'black';
             target.style.color = 'white';
-            this.value = '낮이조아';
+            self.value = '낮이조아';
 
             var alist = document.querySelectorAll('a');
             var i = 0;
@@ -60,7 +25,7 @@
         } else {
             target.style.backgroundColor = 'white';
             target.style.color = 'black';
-            this.value = '밤이조아';
+            self.value = '밤이조아';
 
             var alist = document.querySelectorAll('a');
             var i = 0;
@@ -69,6 +34,23 @@
                 i = i + 1;
             }
         }
+    }
+    </script>
+</head>
+<body>
+
+    <h1><a href="">Java Script</a></h1>
+    <a href="">재밌지만</a>
+    <a href="">어려워</a>
+    <p>이 페이지는 쩨가 자바스크립트를 연습하는 페이지다 !</p>
+
+    <h3>야~~호~~~</h3>
+    <input type="button" value="밤이조아" onclick="
+        nightDayHandler(this);
+    ">
+
+    <input type="button" value="밤이조아" onclick="
+    nightDayHandler(this);
     ">
 
 </body>

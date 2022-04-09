@@ -23,6 +23,7 @@
         </script>
     </ul>
 
+    <!-- 입력/매개변수와 인자 -->
     <h2>Parameter & Argument</h2>
     <script>
         function onePlusOne(){
@@ -36,9 +37,15 @@
         sum(3,4); //7
     </script>
 
+    <!-- 출력 -->
     <h2>Return</h2>
     <script>
-        
+        function sum2(left,right){
+            return left+right;
+        }
+        document.write(sum2(2,3)+'<br />');
+        document.write('<div style="color:red;">'+sum2(2,3)+'</div>');
+        document.write('<div style="font-size:3rem;">'+sum2(2,3)+'</div>');
     </script>
 </body>
 </html>
